@@ -28,7 +28,7 @@ e2label /dev/sdb2 psxitarch
 
 mount root partition and install arch
 ```
-mount /dev/sdb2
+mount /dev/sdb2 /mnt
 pacstrap /mnt base base-devel
 ```
 
