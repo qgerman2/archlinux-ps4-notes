@@ -63,9 +63,9 @@ exit
 
 copy the kernel bzImage and initramfz image onto the first partition
 
-from where you should be good to go on your ps4, take the usb/ssd onto the console and launch the mira and linux payloads
+from here you should be good to go on your ps4, take the usb/ssd onto the console and launch the mira and linux payloads
 
-use iwd to connect to the a wifi network
+use iwd to connect to a wifi network
 
 install plasma-desktop
 install the video drivers https://github.com/Ps3itaTeam/ps4linux-video-drivers
@@ -79,7 +79,9 @@ uncomment allow wheel users without password
 create a user
 ```
 useradd -m asd
+```
 add to wheel group
+```
 gpasswd -a asd wheel
 ```
 give it a password
@@ -89,8 +91,11 @@ passwd asd
 exit and log into the new user
 
 install yay https://github.com/Jguer/yay
+
 yay downgrade and install old xorg https://github.com/hippie68/psxitarch-how-to/issues/12
+
 reboot
+
 write a short sh file to launch plasma wayland https://wiki.archlinux.org/title/KDE#Starting_Plasma
 ```
 nano plasma-wayland.sh
@@ -101,5 +106,6 @@ XDG_SESSION_TYPE=wayland dbus-run-session startplasma-wayland
 run the script and hope for the best
 
 install meta-utils and vulkan-tools
-test xorg graphics with glxgears
-test vulkan with vkcube
+
+- test xorg graphics with glxgears
+- test vulkan with vkcube
