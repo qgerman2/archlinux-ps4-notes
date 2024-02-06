@@ -82,17 +82,13 @@ from here you should be good to go on your ps4, take the usb/ssd onto the consol
 
 use iwd to connect to a wifi network
 
-``
+```
 iwctl
-
 station wlan0 show
-
 station wlan0 scan networks
-
 station wlan0 get-networks
-
 station wlan0 connect "network name"
-``
+```
 
 install plasma-desktop
 install the video drivers https://github.com/Ps3itaTeam/ps4linux-video-drivers
