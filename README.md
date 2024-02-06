@@ -78,15 +78,19 @@ vram.txt defines how much vram gb to assign out of the consoles 8 gb, the rest w
 
 from here you should be good to go on your ps4, take the usb/ssd onto the console and launch the mira and linux payloads
 
-** the linux payload doesnt seem to work with the latest psfree + exfathax jailbreaking methods as time of writing, stick to regular webkit exploits like xhost pro **
+**the linux payload doesnt seem to work with the latest psfree + exfathax jailbreaking methods as time of writing, stick to regular webkit exploits like xhost pro**
 
 use iwd to connect to a wifi network
 
 ``
 iwctl
+
 station wlan0 show
+
 station wlan0 scan networks
+
 station wlan0 get-networks
+
 station wlan0 connect "network name"
 ``
 
