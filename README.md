@@ -46,6 +46,8 @@ passwd
 ```
 set up locale, keymap and timezone according to the arch install wiki
 
+https://wiki.archlinux.org/title/installation_guide
+
 update pacman database and install important stuff
 ```
 pacman -Sy
