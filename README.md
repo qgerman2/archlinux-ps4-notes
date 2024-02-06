@@ -12,7 +12,11 @@ download list (most of these files are available in this repo):
 flash arch iso onto a usb, boot in a pc
 plug your usb/hdd where to install
 
-check disks with fdisk -l, prepare partitions with cfdisk
+check disks with fdisk -l
+
+create new mbr partition table with fdisk
+
+prepare partitions with cfdisk
 - 1 50mb fat32 partition, type EFI or W95 FAT 32
 - 2 30gb+ ext4 root filesystem partition, type Linux
 - 3 optional fat32 to copy files from a windows pc, like games, type W95 FAT32
